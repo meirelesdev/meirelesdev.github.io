@@ -1,6 +1,7 @@
 
 * {
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
 }
 body {
 	margin: 0;
@@ -8,8 +9,9 @@ body {
 }
 .container{
 	max-width: 1024px;
-	display: flex;
+	display: flex; 
 }
+
 header {
 	margin: auto;
 	display: flex;
@@ -26,11 +28,23 @@ header .logo {
 	text-shadow:0px 1px 0px #555555;
 
 }
+i.fas{
+	display: none;
+	font-size: 30px;
+	line-height: 90px;
+	color: #FF4F5A;
+}
 .menu {
 	display:flex;
 	justify-content: flex-end;
 	font-weight: 300;
 	align-items:center;
+}
+.hidden{
+	display: none;
+}
+.show{
+	display: block;
 }
 nav a {
 	display:block;
@@ -53,27 +67,19 @@ section{
 	margin: auto;
 }
 
-section div.banner {
+.banner {
 	display:flex;
 	justify-content:center;
 	color: white;
 	height: 70vh;
 	background-color: #FF4F5A;
 	padding: 2%;
-	/* background-image:url('../images/img1.jpg');
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size:cover;
-	height:670px; */
-}
-.div-img{
-	padding-top: 50px;
-	align-content: center;
 }
 .div-img img {
 	width: 400px;
 	border-radius: 20px;
 	margin: auto;
+	margin-top: 50px;
 }
 .column {
 	flex-direction: column;
@@ -85,14 +91,18 @@ section div.banner {
 	justify-content:center;
 }
 .headline h1 {
-	color:#FFFFFF;
-	font-size:50px;
+	color: #fff;
+	padding:2%;
 	width: 100%;
+	text-align: center;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
 	text-shadow:0px 1px 0px #555555;
 }
 .headline p{
-	margin: 20px;
+	margin: 15px;
 	padding: 20px;
+	letter-spacing: 0.1em;
 	text-indent: 30px;
 }
 section div.title_section{
@@ -162,9 +172,8 @@ section div.content_about_me > img{
 
 }
 section div.content_about_me p{
-	width: 70%;
-	margin-top: 50px;
-	margin-left: 50px;
+	width: 100%;
+	padding: 2%;
 	text-indent: 30px;
 	font-weight: 300;
 	font-size: 1.2em;
@@ -225,4 +234,94 @@ footer{
 	background-color: #FF4F5A;
 	color: white;
 	text-align: center;
+}
+@media screen and (max-width: 992px) {
+	.menu {
+		display: none;
+	}
+	i.fas{
+		display: block;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+	.logo{
+		flex: 1;
+		justify-content: center;
+	}
+	.menu-mobile {
+		width: 60vw;
+		background: white;
+		position: absolute;
+		right: 0;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-direction: column;
+		align-items: center;
+		height: 100vh;
+	}
+	i.fa-times{
+		font-size: 20px;
+		text-align: right;
+	}
+	.menu-mobile a{
+		width: 100%;
+		text-align: center;
+	}
+	nav a.active,
+	nav a:hover {
+		border-radius: 0;
+		width: 95%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.banner{
+		height: 100%;
+		padding: 2%;
+	}
+	.container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.headline{
+		text-align: center;
+	}
+	.headline h1, .headline p{
+		margin: 0;
+		padding: 2%;
+	}
+	section div.content_about_me {
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+		padding: 2%;
+	}
+	
+	section div.content_about_me > img{
+		width: 50vw;
+		height: 100%;
+		margin: auto;
+		border-radius: 30px;
+		box-shadow: 2px 2px 5px 1px black;
+	
+	
+	}
+	section div.content_about_me p{
+		width: 90%;
+		font-weight: 300;
+		line-height: 1.2em;
+	}
+	.contato form{
+		margin: auto;
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	.headline h1, .headline p{
+		margin: 0;
+		padding: 10%;
+	}
+	section div.title_section{
+		border-radius: 0;	
+	}
 }

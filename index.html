@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- metas para mudar a cor do navegador mobile -->
+    <meta name="theme-color" content="#e8523c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e8523c">
     <title>Daniel Meireles</title>
+    <script src="https://kit.fontawesome.com/bbda1ce8ed.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="logo">Daniel Meireles</div>
+        <i class="fas fa-bars"  id="btn-open"></i>        
         <nav class="menu">
             <a href="" class="active">HOME</a>
             <a href="">PROJETOS</a>
             <a href="">SOBRE</a>
+            <a href="">ARTIGOS</a>
+            <a href="">CONTATO</a>
+        </nav>
+        <nav class="menu-mobile hidden" id="menu-mobile">
+            <i class="fas fa-times" id="btn-close"></i>
+            <a href="" class="active">HOME</a>
+            <a href="">PROJETOS</a>
+            <a href="">SOBRE</a>
+            <a href="">ARTIGOS</a>
             <a href="">CONTATO</a>
         </nav>
     </header>
@@ -22,8 +36,8 @@
             <div class="banner">
                 <div class="container">
                     <div class="headline">
-                        <h1>Em construção</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas enim delectus sapiente voluptatibus nam odit blanditiis aspernatur praesentium quos molestias quam eaque voluptate aliquam, culpa animi voluptates. Consequatur mollitia animi natus, officia ex nostrum facilis dolorem optio quis, perferendis odit ducimus earum asperiores quaerat maiores omnis est sunt distinctio?</p>
+                        <h1>Desenvolvimento Web</h1>
+                        <p>Seja bem vindo a minha pagina Pessoal, nela você vai encontrar um site desenvolvido por mim, e pretendo mostrar aqui meus conhecimentos e o passo a passo que estou trilhando nesta área. Fique avontade para entrar em contado caso tenha alguma dúvida ou queira conhecer melhor meu trabalho!  </p>
                     </div>
                     <div class="div-img">
                         <img src="assets/images/BANNER.jpg" alt="banner da home page">
@@ -33,12 +47,12 @@
         </section>
         <section>
             <div class="title_section">Projetos</div>
-            <div class="content_projetos">
+            <div class="content_projetos" id="div-projects">
                 <div class="projeto">
                     <h2>Projeto 1</h2>
                     <img src="assets/images/jogodavelha.png" alt="Imagem do projeto">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
-                </div>
+                </div> 
                 <div class="projeto">
                     <h2>Projeto 2</h2>
                     <img src="assets/images/jogodavelha.png" alt="Imagem do projeto">
@@ -88,5 +102,6 @@
         </div>
         <div class="copy">Desenvolvido por Daniel Meireles</div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

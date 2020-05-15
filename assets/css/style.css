@@ -115,7 +115,7 @@ section div.title_section{
 	font-size: 37px;
 	border-radius: 0 0 35px 35px;
 }
-section div.content_projetos {
+section div.content_projetos, .content_artigos {
 	width: 100%;
 	margin: auto;
 	margin-top: 20px;
@@ -123,6 +123,19 @@ section div.content_projetos {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+.artigo {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+.artigo > div{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+.artigo > div > img{
+	width: 30%;
 }
 
 div.content_projetos .projeto {
@@ -289,6 +302,14 @@ footer{
 		margin: 0;
 		padding: 2%;
 	}
+	.content_artigos {
+		margin: auto;
+		padding: 2%;
+		text-align: center;
+	}
+	.artigo > div{
+		flex-direction: column;
+	}
 	section div.content_about_me {
 		flex-direction: column;
 		width: 100%;
@@ -323,5 +344,9 @@ footer{
 	}
 	section div.title_section{
 		border-radius: 0;	
+	}
+	.artigo img{
+		margin: auto;
+		padding: 10px;
 	}
 }

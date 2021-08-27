@@ -40,6 +40,13 @@ i.fas{
 	font-weight: 300;
 	align-items:center;
 }
+.menu-mobile {
+	transition: 0.3s all;
+}
+.menu-mobile a{
+	display: none;
+	
+}
 .hidden{
 	display: none;
 }
@@ -251,6 +258,9 @@ footer{
 @media screen and (max-width: 992px) {
 	.menu {
 		display: none;
+	}
+	.menu-mobile a{
+		display: block;
 	}
 	i.fas{
 		display: block;

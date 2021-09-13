@@ -1,3 +1,6 @@
+let span = document.querySelector('.anos')
+let idade = ((new Date()).getFullYear() - 1985)
+span.innerHTML = idade
 const toggle = () => {
     let menuMobile = document.getElementById("menu-mobile")
     if (menuMobile.classList.contains('show')) {

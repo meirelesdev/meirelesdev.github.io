@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="dark">
+
+<body id="topo">
     <header>
-        <div class="logo">Daniel Meireles</div>
-        <i class="fas fa-bars"  id="btn-open"></i>        
+        <div class="logo">
+            <button onclick="toggleDarkMode()" class="btn-dark"></button>
+            <h1>Daniel Meireles</h1>
+        </div>
+        <i class="fas fa-bars" onclick="toggleMenu()" id="btn-open"></i>
         <nav class="menu">
-            <a href="" class="active">HOME</a>
-            <a href="">PROJETOS</a>
-            <a href="">ARTIGOS</a>
-            <a href="">SOBRE</a>
-            <a href="">CONTATO</a>
-        </nav>
-        <nav class="menu-mobile hidden" id="menu-mobile">
-            <i class="fas fa-times" id="btn-close"></i>
-            <a href="" class="active">HOME</a>
-            <a href="">PROJETOS</a>
-            <a href="">ARTIGOS</a>
-            <a href="">SOBRE</a>
-            <a href="">CONTATO</a>
+            <i class="fas fa-times" onclick="toggleMenu()" id="btn-close"></i>
+            <a href="#topo" class="active">HOME</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#artigos">ARTIGOS</a>
+            <a href="#sobre">SOBRE</a>
+            <a href="#contato">CONTATO</a>
         </nav>
     </header>
     <article>
@@ -37,97 +35,116 @@
                 <div class="container">
                     <div class="headline">
                         <h1>Desenvolvimento Web</h1>
-                        <p>Seja bem vindo a minha pagina Pessoal, nela você vai encontrar um site desenvolvido por mim, e pretendo mostrar aqui meus conhecimentos e o passo a passo que estou trilhando nesta área. Fique avontade para entrar em contado caso tenha alguma dúvida ou queira conhecer melhor meu trabalho!  </p>
+                        <p>Seja bem vindo a minha pagina Pessoal, nela você vai encontrar um site desenvolvido por mim,
+                            e pretendo mostrar aqui meus conhecimentos e o passo a passo que estou trilhando nesta área.
+                            Fique avontade para entrar em contado caso tenha alguma dúvida ou queira conhecer melhor meu
+                            trabalho! </p>
                     </div>
-                    <div class="div-img">
-                        <img src="assets/images/BANNER.jpg" alt="banner da home page">
-                    </div>
+                    <div class="div-img"></div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="title_section">Projetos</div>
+        <section id="projetos">
+            <div class="title_section">
+                <h2>Projetos</h2>
+            </div>
             <div class="content_projetos" id="div-projects">
                 <div class="projeto" onclick="redirect('devinhouse')">
                     <h2>Projetos DevinHouse</h2>
                     <img src="assets/images/devinhouse.png" alt="Logo dev in house">
                     <p>Neste link vc encontra todas as atividades desenvolvidas no curso Dev in House.</p>
-                </div> 
+                </div>
                 <div class="projeto" onclick="redirect('hcodelab')">
                     <h2>Projeto HcodeLab</h2>
                     <img src="assets/images/hcodelab.png" alt="Imagem do projeto">
-                    <p>Neste link você sera redirecionado para o projeto final do curso HcodeLab com NextJS e AdonisJS.</p>
+                    <p>Neste link você sera redirecionado para o projeto final do curso HcodeLab com NextJS e AdonisJS.
+                    </p>
                 </div>
-                <div class="projeto">
-                    <h2>Projeto 3</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do projeto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
+                <div class="projeto" onclick="redirect('devinhouse')">
+                    <h2>Projetos DevinHouse</h2>
+                    <img src="assets/images/devinhouse.png" alt="Logo dev in house">
+                    <p>Neste link vc encontra todas as atividades desenvolvidas no curso Dev in House.</p>
                 </div>
-                <div class="projeto">
-                    <h2>Projeto 4</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do projeto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
-                </div>
-                <div class="projeto">
-                    <h2>Projeto 4</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do projeto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
-                </div>
-                <div class="projeto">
-                    <h2>Projeto 4</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do projeto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
+                <div class="projeto" onclick="redirect('hcodelab')">
+                    <h2>Projeto HcodeLab</h2>
+                    <img src="assets/images/hcodelab.png" alt="Imagem do projeto">
+                    <p>Neste link você sera redirecionado para o projeto final do curso HcodeLab com NextJS e AdonisJS.
+                    </p>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="title_section">Artigos</div>
+        <section id="artigos">
+            <div class="title_section">
+                <h2>Artigos</h2>
+            </div>
             <div class="content_artigos" id="div-artigo">
                 <div class="artigo">
-                    <h2>Artigo 1</h2>
-                    <div>
-                        <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
-                        <div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
-                        </div>
-                    </div>
+                    <h2>Exemplo de Artigo 1</h2>
+                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia
+                        praesentium est consequatur ab quas adipisci amet. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas
+                        adipisci amet.</p>
                 </div>
                 <div class="artigo">
-                        <h2>Artigo 2</h2>
-                    <div>
-                        <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
-                        <div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas adipisci amet.</p>
-                        </div>
-                    </div>
+                    <h2>Exemplo de Artigo 2</h2>
+                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
+                        quia praesentium est consequatur ab quas adipisci amet.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
+                        quia praesentium est consequatur ab quas adipisci amet.</p>
+                </div>
+                <div class="artigo">
+                    <h2>Exemplo de Artigo 3</h2>
+                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia
+                        praesentium est consequatur ab quas adipisci amet. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas
+                        adipisci amet.</p>
+                </div>
+                <div class="artigo">
+                    <h2>Exemplo de Artigo 4</h2>
+                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
+                        quia praesentium est consequatur ab quas adipisci amet.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
+                        quia praesentium est consequatur ab quas adipisci amet.</p>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="title_section about">Sobre mim</div>
+        <section id="sobre">
+            <div class="title_section about">
+                <h2>Sobre mim</h2>
+            </div>
             <div class="content_about_me">
-                    <img src="assets/images/profile.jpg" alt="Foto de Daniel Meireles">
+                <img src="assets/images/profile.jpg" alt="Foto de Daniel Meireles">
                 <div>
                     <p>
-                        Ola, Meu nome é Daniel Meireles do Nascimento tenho <span class="anos"></span> anos e sou formado em Analise e Desenvolvimento de Sistemas.
+                        Ola, Meu nome é Daniel Meireles do Nascimento tenho <span class="anos"></span> anos e sou
+                        formado em Analise e Desenvolvimento de Sistemas.
                     </p>
                     <p>
-                        Atualmentes estou estudando as Tecnologias React e PHP e meu desejo é trabalhar somente como desenvolvedor fullstack remotamente, a ideia desta página pessoal surgiu durante a quarentena provocada devido ao COVID-19, e estou estudando o dobro do tempo que já estudava.
+                        Atualmentes estou estudando as Tecnologias React e PHP e meu desejo é trabalhar somente como
+                        desenvolvedor fullstack remotamente, a ideia desta página pessoal surgiu durante a quarentena
+                        provocada devido ao COVID-19, e estou estudando o dobro do tempo que já estudava.
                     </p>
                     <p>
-                        Sei que a situação do mundo não é das melhores e o fato de ficar confinado a maior parte do tempo não é uma coisa que agrada a maioria das pessoas, mas porque não usar isso para aprender...
+                        Sei que a situação do mundo não é das melhores e o fato de ficar confinado a maior parte do
+                        tempo não é uma coisa que agrada a maioria das pessoas, mas porque não usar isso para
+                        aprender...
 
                     </p>
                     <p>
-                        Sou apaixonado por tecnologias, e sei que parece clichê nesta área, porém como explicar o fato de sentir euforia ao ver uma novidade na area tecnologia?! Bom, é assim que me sinto, estou aprendendo constantemente e espero poder continuar assim.
+                        Sou apaixonado por tecnologias, e sei que parece clichê nesta área, porém como explicar o fato
+                        de sentir euforia ao ver uma novidade na area tecnologia?! Bom, é assim que me sinto, estou
+                        aprendendo constantemente e espero poder continuar assim.
                     </p>
                 </div>
             </div>
         </section>
     </article>
     <footer>
-        <div class="content_footer">
+        <div class="content_footer" id="contato">
             <div class="contato">
                 <h3>Entre em contato!</h3>
                 <form action="">
@@ -140,6 +157,8 @@
         </div>
         <div class="copy">Desenvolvido por Daniel Meireles</div>
     </footer>
+    <script src="assets/js/functions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

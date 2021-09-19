@@ -118,7 +118,6 @@ section{
 	justify-content:center;
 	color: white;
 	justify-content: center;
-	height: 70vh;
 	background-color: #FF4F5A;
 	padding: 2%;
 }
@@ -146,13 +145,6 @@ body.dark .banner {
 body.dark .div-img{
 	box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
-.div-img img {
-	width: 100%;
-	border-radius: 20px;
-}
-.column {
-	flex-direction: column;
-}
 .headline {
 	flex:1;
 	display:flex;
@@ -170,6 +162,7 @@ body.dark .div-img{
 }
 h2 {
 	font-size: 1em;
+	text-shadow:0px 1px 0px #555555;
 }
 .headline p{
 	margin: 15px;
@@ -197,6 +190,10 @@ div.content_artigos {
 	flex-direction: column;
 	align-items: center;
 }
+.git-logo {
+	background: white;
+	border-radius: 5px;
+}
 div.content_projetos p {
 	padding: 10px;
 	margin: 10px;
@@ -216,7 +213,11 @@ body.dark div.content_projetos p, body.dark .artigo p {
 	flex-direction: column;
 	align-items: center;
 }
-.artigo p {
+.artigo div {
+	display: flex;
+	flex-direction: column;
+}
+.artigo div p {
 	margin: 10px;
 	border-radius: 5px;
 	text-align: justify;
@@ -224,8 +225,8 @@ body.dark div.content_projetos p, body.dark .artigo p {
 	font-weight: bold;
 	box-shadow: 0px 0px 5px white;
 }
-.artigo  img{
-	max-width: 80%;
+.artigo img{
+	width: 100%;
 }
 div.content_projetos .projeto, .artigo {
 	width: 300px;
@@ -239,13 +240,13 @@ div.content_projetos .projeto, .artigo {
 	padding-bottom: 0;
 	cursor: pointer;
 }
-.projeto h2, .artigo h2 {
+.projeto h2, .artigo div h2 {
 	color: white;
 	padding: 10px;
 	text-transform: uppercase;
 	text-align: center;
 }
-.projeto p, .artigo p{
+.projeto p, .artigo div p{
 	padding: 15px;
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -335,13 +336,23 @@ footer{
 	.menu, body.dark .menu {
 		box-shadow: unset;
 	}
-	div.content_about_me {
+	div.content_about_me, div.content_artigos {
 		flex-direction: row;
 		max-width: 1024px;
 		margin: 0 auto;
 	}
-	div.content_about_me img {
-		margin: 20px;
+	.artigo {
+		width: 100%;
+		flex-direction: row;
+	}
+	.artigo img {
+		width: 20%;
+	}
+	.artigo div {
+		width: 80%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 }
 @media (min-width: 824px ){
@@ -371,11 +382,8 @@ footer{
 	}
 	section .content_projetos, section .content_artigos{
 		flex-direction: row;
-		flex-wrap: wrap;
 		max-width: 1024px;
 		margin: 0 auto;
-		justify-content: center;
-		align-items: center;
-
+		flex-wrap: wrap;
 	}
 }

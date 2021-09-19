@@ -1,0 +1,28 @@
+main .artigo-single {
+    margin: 0 auto;
+}
+.artigo-single .title_section {
+    font-size: 1rem;
+}
+.post {
+    max-width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+div.post img {
+    margin: 2px auto;
+    width: 100%;
+    max-width: 300px;
+    /* background-color: red; */
+}
+article h2{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(129, 127, 127);
+}
+article p {
+    padding: 2%;
+    text-indent: 30px;
+    margin: 20px
+}

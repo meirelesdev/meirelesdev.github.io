@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e8523c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e8523c">
+    <link rel="shortcut icon" href="../assets/images/BANNER.jpg" type="image/x-icon">
+    <title>Daniel Meireles</title>
+    <script src="https://kit.fontawesome.com/bbda1ce8ed.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style-post.css">
+</head>
+<body id="topo">
+    <header>
+        <div class="logo">
+            <button onclick="toggleDarkMode()" class="btn-dark"></button>
+            <h1>Daniel Meireles</h1>
+        </div>
+        <i class="fas fa-bars" onclick="toggleMenu()" id="btn-open"></i>
+        <nav class="menu">
+            <i class="fas fa-times" onclick="toggleMenu()" id="btn-close"></i>
+            <a href="../index.html">HOME</a>
+            <a href="../index.html#projetos">PROJETOS</a>
+            <a href="../index.html#artigos">ARTIGOS</a>
+            <a href="../index.html#sobre">SOBRE</a>
+            <a href="../index.html#contato">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+        <section class="artigo-single">
+            <div class="title_section">
+                <h2>Configurando o git localmente.</h2>
+            </div>
+            <div class="post">
+                <img class="git-logo" src="../assets/images/git-logo.png" alt="Imagem do artigo">
+                <article>
+                    <h2>Configurando o git localmente.</h2>
+                    <p>Neste Artigo tentei trazer informações basicas sobre como configurar o Versionador de codigos mais conhecido atualmente o git.</p>
+                    <p>Inicialmente você precisa ter ja instalado em sua maquina o programa Git. Você pode baixalo em: <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content_footer" id="contato">
+            <div class="contato">
+                <h3>Entre em contato!</h3>
+                <div class="alert"></div>
+                <form action="" id="contato">
+                    <input type="text" name="nome" placeholder="Nome:">
+                    <input type="email" name="email" placeholder="E-mail:">
+                    <textarea name="msg" id="" cols="30" rows="10" placeholder="Mensagem:"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy">Desenvolvido por Daniel Meireles</div>
+    </footer>
+    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        checkViewMode()
+    </script>
+</body>
+</html>

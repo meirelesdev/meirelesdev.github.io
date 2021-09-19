@@ -1,16 +1,28 @@
 const redirect = (target) => {
+    console.log(target)
+    let url = `https://meirelesdev.github.io/${target}`
     switch(target){
         case 'devinhouse':
-            window.location = 'https://meirelesdev.github.io/devinhouse/'
+            window.open(url)
             break
             case 'hcodelab':
-                window.location = 'https://farmaciahcode.vercel.app/'
+                window.open('https://farmaciahcode.vercel.app/')
+            break
+            case 'to-do-list-devinhouse':
+                window.open(url)
+            break
+            case 'jogodavelha':
+                window.open(url)
+            break
+            case 'git-config':
+                // url = `https://meirelesdev.github.io/artigos/${target}.html`
+                    url = `http://127.0.0.1:5500/artigos/${target}.html`
+                window.open(url)
             break
         default:
-            window.location.reload()
+            // window.location.reload()
 
     }
-    console.log(target)
 }
 const toggleMenu = () => {
     document.querySelector(".menu").classList.toggle('show')
@@ -30,10 +42,13 @@ const saveModeOnStorage = isDark => {
     localStorage.setItem('darkMode', JSON.stringify({isDark}))
 }
 const getModeOnStorage = () => {
-    return JSON.parse(localStorage.getItem('darkMode'))
+    return JSON.parse(localStorage.getItem('darkMode')) || {isDark: false}
 }
 const getAge = () => {
     let span = document.querySelector('.anos')
     let idade = ((new Date()).getFullYear() - 1985)
     span.innerHTML = idade
+}
+const checkVieMode = () => {
+    if(getModeOnStorage().isDark) document.body.classList.add('dark')
 }

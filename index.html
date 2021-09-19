@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body id="topo">
     <header>
         <div class="logo">
@@ -22,14 +20,14 @@
         <i class="fas fa-bars" onclick="toggleMenu()" id="btn-open"></i>
         <nav class="menu">
             <i class="fas fa-times" onclick="toggleMenu()" id="btn-close"></i>
-            <a href="#topo" class="active">HOME</a>
+            <a href="#topo">HOME</a>
             <a href="#projetos">PROJETOS</a>
             <a href="#artigos">ARTIGOS</a>
             <a href="#sobre">SOBRE</a>
             <a href="#contato">CONTATO</a>
         </nav>
     </header>
-    <article>
+    <main>
         <section>
             <div class="banner">
                 <div class="container">
@@ -51,25 +49,24 @@
             <div class="content_projetos" id="div-projects">
                 <div class="projeto" onclick="redirect('devinhouse')">
                     <h2>Projetos DevinHouse</h2>
-                    <img src="assets/images/devinhouse.png" alt="Logo dev in house">
-                    <p>Neste link vc encontra todas as atividades desenvolvidas no curso Dev in House.</p>
+                    <img src="assets/images/projects/devinhouse.png" alt="Logo do Dev in House">
+                    <p>Neste link você encontra todas as atividades desenvolvidas no curso Dev in House.</p>
                 </div>
                 <div class="projeto" onclick="redirect('hcodelab')">
                     <h2>Projeto HcodeLab</h2>
-                    <img src="assets/images/hcodelab.png" alt="Imagem do projeto">
-                    <p>Neste link você sera redirecionado para o projeto final do curso HcodeLab com NextJS e AdonisJS.
+                    <img src="assets/images/projects/hcodelab.png" alt="Imagem do Projeto HcodeLab">
+                    <p>Neste link você será redirecionado para o projeto final do curso HcodeLab com NextJS e AdonisJS.
                     </p>
                 </div>
-                <div class="projeto" onclick="redirect('devinhouse')">
-                    <h2>Projetos DevinHouse</h2>
-                    <img src="assets/images/devinhouse.png" alt="Logo dev in house">
-                    <p>Neste link vc encontra todas as atividades desenvolvidas no curso Dev in House.</p>
+                <div class="projeto" onclick="redirect('to-do-list-devinhouse')">
+                    <h2>Projetos DevinHouse To Do List</h2>
+                    <img src="assets/images/projects/to-do-list.png" alt="Imagem do Projeto To Do List">
+                    <p>Neste link você encontra o 1ª Projeto desenvolvidas para avalição do conhecimento do modulo 1 do curso Dev in House.</p>
                 </div>
-                <div class="projeto" onclick="redirect('hcodelab')">
-                    <h2>Projeto HcodeLab</h2>
-                    <img src="assets/images/hcodelab.png" alt="Imagem do projeto">
-                    <p>Neste link você sera redirecionado para o projeto final do curso HcodeLab com NextJS e AdonisJS.
-                    </p>
+                <div class="projeto" onclick="redirect('jogodavelha')">
+                    <h2>Projetos Jogo da Velha</h2>
+                    <img src="assets/images/projects/jogodavelha.png" alt="Imagem do Projeto Jogo da velha">
+                    <p>Neste link você encontra um do primeiros Projetos que desenvolvi para apromorar minhas habilidade em HTML, CSS, E JavaScript.</p>
                 </div>
             </div>
         </section>
@@ -78,37 +75,12 @@
                 <h2>Artigos</h2>
             </div>
             <div class="content_artigos" id="div-artigo">
-                <div class="artigo">
-                    <h2>Exemplo de Artigo 1</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia
-                        praesentium est consequatur ab quas adipisci amet. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas
-                        adipisci amet.</p>
-                </div>
-                <div class="artigo">
-                    <h2>Exemplo de Artigo 2</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
-                        quia praesentium est consequatur ab quas adipisci amet.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
-                        quia praesentium est consequatur ab quas adipisci amet.</p>
-                </div>
-                <div class="artigo">
-                    <h2>Exemplo de Artigo 3</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam quia
-                        praesentium est consequatur ab quas adipisci amet. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Officia dolores optio, quam quia praesentium est consequatur ab quas
-                        adipisci amet.</p>
-                </div>
-                <div class="artigo">
-                    <h2>Exemplo de Artigo 4</h2>
-                    <img src="assets/images/jogodavelha.png" alt="Imagem do artigo">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
-                        quia praesentium est consequatur ab quas adipisci amet.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolores optio, quam
-                        quia praesentium est consequatur ab quas adipisci amet.</p>
+                <div class="artigo" onclick="redirect('git-config')">
+                    <img class="git-logo" src="assets/images/git-logo.png" alt="Imagem do artigo">
+                    <div>
+                        <h2>Configurando o git localmente.</h2>
+                        <p>Neste Artigo tentei trazer informações basicas sobre como configurar o Versionador de codigos mais conhecido atualmente o git.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -142,12 +114,13 @@
                 </div>
             </div>
         </section>
-    </article>
+    </main>
     <footer>
         <div class="content_footer" id="contato">
             <div class="contato">
                 <h3>Entre em contato!</h3>
-                <form action="">
+                <div class="alert"></div>
+                <form action="" id="contato">
                     <input type="text" name="nome" placeholder="Nome:">
                     <input type="email" name="email" placeholder="E-mail:">
                     <textarea name="msg" id="" cols="30" rows="10" placeholder="Mensagem:"></textarea>

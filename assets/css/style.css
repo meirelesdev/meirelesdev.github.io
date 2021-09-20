@@ -25,7 +25,7 @@ header {
 	position: sticky;
 	top: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	background-color: white;
 }
@@ -39,6 +39,7 @@ body.dark header {
 }
 .logo h1 {
 	color: #e8523c;
+	text-align: center;
 	text-shadow:2px 10px 5px #555555;
 }
 body.dark .headline h1 {
@@ -73,7 +74,7 @@ body.dark .menu {
 .menu {
 	position: absolute;
 	padding: 0 0 10px 0;
-	top: 20px;
+	top: 0;
 	right: 0;
 	width: 90%;
 	display:none;

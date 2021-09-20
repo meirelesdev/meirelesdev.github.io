@@ -15,9 +15,9 @@ const redirect = (target) => {
                 window.open(url)
             break
             case 'git-config':
-                // url = `https://meirelesdev.github.io/artigos/${target}.html`
-                    url = `http://127.0.0.1:5500/artigos/${target}.html`
-                window.open(url)
+                url = `https://meirelesdev.github.io/artigos/${target}.html`
+                    // url = `http://127.0.0.1:5500/artigos/${target}.html`
+                window.location.href = url
             break
         default:
             // window.location.reload()

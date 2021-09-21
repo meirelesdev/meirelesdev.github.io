@@ -57,6 +57,7 @@ i#btn-open {
 	height: 50px;
 	background-image: url("../images/btn-dark.png");
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 i.fas{
 	display: none;
@@ -136,7 +137,7 @@ body.dark .banner {
 .div-img{
 	width: 300px;
 	height: 300px;
-	background-image: url('../images/BANNER.jpg');
+	background-image: url('../images/banner.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
